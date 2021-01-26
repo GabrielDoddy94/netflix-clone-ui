@@ -1,0 +1,281 @@
+/* GLOBAL  **********/
+
+:root {
+  --color-white: #fff;
+  --color-red: #e50914;
+  --color-black: #000;
+  --color-blue: #004beb;
+  --color-gray: #303030;
+  --color-lightgrey: #757566;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: inherit;
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER **********/
+.header {
+  position: relative;
+  height: 706.984px;
+}
+
+.header__bg {
+  height: 100%;
+  width: 100%;
+}
+
+.header__bg--hero {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header__gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.header__nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 90%;
+  width: 125rem;
+  margin: auto;
+  padding-top: 3rem;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__text {
+  /* background: lightgreen; */
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  width: 66rem;
+  margin: auto;
+  z-index: 1;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading__primary {
+  font-size: 4.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.heading__secondary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3.5rem;
+}
+
+.paragraph {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+}
+
+.form__input {
+  padding: 2rem 0.5rem;
+  font-size: 1.5rem;
+  flex: 2;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.form__input::placeholder {
+  font-weight: 600;
+}
+
+.form__btn {
+  flex: 1;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.2rem;
+  color: inherit;
+  background: var(--color-red);
+  cursor: pointer;
+}
+
+.logo {
+  width: 13rem;
+}
+
+.btn--sign {
+  background: var(--color-red);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.4rem;
+}
+
+/* Responsiveness */
+@media (max-width: 950px) {
+  .header {
+    height: 733px;
+  }
+
+  .logo {
+    width: 11rem;
+  }
+
+  .header__text {
+    width: 80%;
+  }
+
+  .heading__secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  .paragraph {
+    font-size: 2.2rem;
+    /* font-weight: 500;
+    margin-bottom: 1.5rem; */
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form__input {
+    width: 80%;
+  }
+
+  .form__btn {
+    margin-top: 4rem;
+    font-size: 1.7rem;
+    padding: 1.1rem 1.8rem;
+  }
+}
+
+@media (max-width: 820px) {
+  /* .header__text {
+    width: 62%;
+  } */
+}
+
+@media (max-width: 740px) {
+  .header {
+    height: 709px;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    /* font-weight: 500;
+    margin-bottom: 1.5rem; */
+  }
+
+  .form__input {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .header {
+    height: 764px;
+  }
+
+  .img-gradient {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    height: 517.797px;
+  }
+
+  .header__nav {
+    max-width: 90%;
+    width: 45rem;
+  }
+
+  .logo {
+    width: 9rem;
+  }
+
+  .btn--sign {
+    background: var(--color-red);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.4rem;
+  }
+
+  .header__text {
+    position: absolute;
+    top: 58%;
+  }
+
+  .heading__primary {
+    font-size: 2.5rem;
+  }
+
+  .heading__secondary {
+    font-size: 1.6rem;
+  }
+}
