@@ -8,10 +8,11 @@
     <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
   </head>
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header bb-black">
       <div class="header__nav">
         <div class="logo__box">
-          <img class="logo" src="./assets/img/logo.svg" alt="" />
+          <img class="header__logo" src="./assets/img/logo.svg" alt="" />
         </div>
 
         <div class="sign__box">
@@ -20,9 +21,13 @@
       </div>
 
       <div class="header__text">
-        <h1 class="heading__primary">Unlimited movies, TV shows, and more.</h1>
-        <h2 class="heading__secondary">Watch anywhere. Cancel anytime.</h2>
-        <p class="paragraph">
+        <h1 class="heading__primary margin-bottom-small">
+          Unlimited movies, TV shows, and more.
+        </h1>
+        <h2 class="heading__secondary margin-bottom-medium">
+          Watch anywhere. Cancel anytime.
+        </h2>
+        <p class="paragraph margin-bottom-small">
           Ready to watch? Enter your email to create or restart your membership.
         </p>
 
@@ -38,5 +43,161 @@
 
       <div class="header__gradient"></div>
     </header>
+
+    <!-- SECTION WATCH TV -->
+    <section class="section-tv container-black bb-black">
+      <div class="row">
+        <!-- LEFT -->
+        <div class="left">
+          <h1 class="heading__primary margin-bottom-small">
+            Enjoy on your TV.
+          </h1>
+          <h2 class="heading__secondary">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
+            players, and more.
+          </h2>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <div class="watch__animation--tv">
+            <img class="watch__img" src="./assets/img/tv.png" alt="" />
+
+            <div class="watch__video--tv">
+              <video class="watch__video" autoplay playsinline muted loop>
+                <source
+                  src="./assets/video/video-tv-0819.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION WATCH OFFLINE -->
+    <section class="section-offline container-black bb-black">
+      <div class="row">
+        <!-- LEFT -->
+        <div class="right offline-order--1">
+          <div class="watch__animation--offline">
+            <img src="./assets/img/mobile-0819.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="left offline-order--2">
+          <h1 class="heading__primary margin-bottom-small">
+            Download your shows to watch offline.
+          </h1>
+          <h2 class="heading__secondary">
+            save your favorites easily and always have something to watch.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION WATCH EVERYWHERE -->
+    <section class="section-device container-black bb-black">
+      <div class="row">
+        <!-- LEFT -->
+        <div class="left">
+          <h1 class="heading__primary margin-bottom-small">
+            Watch everywhere.
+          </h1>
+          <h2 class="heading__secondary">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV without paying more.
+          </h2>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <div class="watch__animation--device">
+            <img class="watch__img" src="./assets/img/device-pile.png" alt="" />
+
+            <div class="watch__video--device">
+              <video class="watch__video" autoplay playsinline muted loop>
+                <source
+                  src="./assets/video/video-devices.m4v"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION QUESTIONS -->
+    <section class="section-questions container-black bb-black">
+      <div class="questions__container--1">
+        <h1 class="heading__question--main margin-bottom-medium">
+          Frequently Asked Questions
+        </h1>
+
+        <div class="questions__container--2">
+          <div class="questions__box">
+            <h2 class="heading__question--sub">What is Netflix?</h2>
+            <span class="question__plus">&plus;</span>
+          </div>
+
+          <div class="questions__box">
+            <h2 class="heading__question--sub">How much does Netflix cost?</h2>
+            <span class="question__plus">&plus;</span>
+          </div>
+
+          <div class="questions__box">
+            <h2 class="heading__question--sub">Where can I watch?</h2>
+            <span class="question__plus">&plus;</span>
+          </div>
+
+          <div class="questions__box">
+            <h2 class="heading__question--sub">How do I cancel?</h2>
+            <span class="question__plus">&plus;</span>
+          </div>
+
+          <div class="questions__box">
+            <h2 class="heading__question--sub">What can I watch on Netflix?</h2>
+            <span class="question__plus">&plus;</span>
+          </div>
+        </div>
+
+        <p class="paragraph margin-bottom-small">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <form class="question__form" action="">
+          <input type="email" class="form__input" placeholder="Email address" />
+          <button class="form__btn">Get Started &gt;</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer container-black">
+      <div class="footer__container">
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#">FAQ</a></li>
+          <li><a class="footer__link" href="#">Help Center</a></li>
+          <li><a class="footer__link" href="#">Account</a></li>
+          <li><a class="footer__link" href="#">Media Center</a></li>
+          <li><a class="footer__link" href="#">Investor Relations</a></li>
+          <li><a class="footer__link" href="#">Jobs</a></li>
+          <li><a class="footer__link" href="#">Redeem Gift Cards</a></li>
+          <li><a class="footer__link" href="#">Buy Gift Cards</a></li>
+          <li><a class="footer__link" href="#">Ways to Watch</a></li>
+          <li><a class="footer__link" href="#">Terms of Use</a></li>
+          <li><a class="footer__link" href="#">Privacy</a></li>
+          <li><a class="footer__link" href="#">Cookie Preferences</a></li>
+          <li><a class="footer__link" href="#">Corporate Information</a></li>
+          <li><a class="footer__link" href="#">Contact Us</a></li>
+          <li><a class="footer__link" href="#">Speed Test</a></li>
+          <li><a class="footer__link" href="#">Legal Notices</a></li>
+          <li><a class="footer__link" href="#">Netflix Originals</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
